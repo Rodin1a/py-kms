@@ -27,7 +27,7 @@
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-menu">
             <div class="navbar-start">
-                <a class="navbar-item" href="/">Home</a>
+                <a class="navbar-item" href="/products">Home</a>
                 <a class="navbar-item" href="/instructions">Instructions</a>
                 <!-- Add more navigation items if needed -->
             </div>
@@ -39,7 +39,7 @@
 
         {% if path != '/' %}
         <div class="block backtohome">
-            <a class="button is-normal is-responsive" href="/">
+            <a class="button is-normal is-responsive" href="/products">
                 Back to home
             </a>
         </div>
@@ -49,11 +49,13 @@
     <footer class="footer">
         <div class="content has-text-centered">
             <p>
-                <strong>py-kms</strong> is online since <span class="convert_timestamp">{{ start_time }}</span>.
+                <strong>KMS Emulating Server</strong>
+                <br>Copyright © 2024 Rodinia. All rights reserved.
+                <!-- <strong>KMS 인증서버</strong> is online since <span class="convert_timestamp">{{ start_time }}</span>.
                 This instance was accessed {{ get_serve_count() }} times. View this software's license <a href="/license">here</a>.
                 {% if version_info %}
                 <br>This instance is running version "{{ version_info['hash'] }}" from branch "{{ version_info['branch'] }}" of py-kms.
-                {% endif %}
+                {% endif %} -->
             </p>
         </div>
     </footer>
